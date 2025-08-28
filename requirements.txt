@@ -1,0 +1,6 @@
+torch==2.5.0
+ray
+lightning
+transformers
+causal-conv1d
+ninja

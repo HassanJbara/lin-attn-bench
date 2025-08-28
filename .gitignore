@@ -1,0 +1,8 @@
+venv
+mad-lab
+mad_lab
+configs/
+benchmark
+.ipynb_checkpoints
+__pycache__
+*.zip

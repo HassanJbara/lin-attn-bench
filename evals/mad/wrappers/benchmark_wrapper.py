@@ -1,9 +1,9 @@
 from typing import Callable
 
-from mad.benchmark import check_benchmark_data_present
-from mad.configs import make_benchmark_mad_configs, MADConfig
-from mad.paths import make_log_path
-from mad.train import train
+from mad_lab.benchmark import check_benchmark_data_present
+from mad_lab.mad.configs import make_benchmark_mad_configs, MADConfig
+from mad_lab.mad.paths import make_log_path
+from mad_lab.train import train
 
 
 def benchmark_wrapper(

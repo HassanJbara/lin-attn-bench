@@ -1,6 +1,6 @@
 from evals.mad.adapters.gsa_adapter import GatedSlotAttentionAdapter
 from evals.mad.wrappers.base_train_script import run_training
-from mad.model.layers import SwiGLU
+from mad_lab.mad.model.layers import SwiGLU
 
 if __name__ == "__main__":
     dim = 128

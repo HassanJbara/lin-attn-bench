@@ -3,9 +3,9 @@ import ray
 import ray.util.multiprocessing as mp
 
 from evals.mad.wrappers.benchmark_wrapper import benchmark_wrapper
-from mad.benchmark import benchmark
-from mad.model import AutoEncoder
-from mad.model.language_model import LanguageModel
+from mad_lab.benchmark import benchmark
+from mad_lab.mad.model import AutoEncoder
+from mad_lab.mad.model.language_model import LanguageModel
 
 
 def run_training(
