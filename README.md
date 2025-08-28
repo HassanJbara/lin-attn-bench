@@ -31,5 +31,19 @@ You will need a linux machine equipped with NVIDIA GPUs. To setup the environmen
 8. Run a script from `./evals/mad/` using the following command:
 
 ```bash
-PYTHONPATH=.:"$(pwd)/mad_lab" python -m evals.mad.mad_eval_gsa --data-path ./benchmark/data --num-workers X --n-gpu X --n-tasks-gpu X`
+PYTHONPATH=.:"$(pwd)/mad_lab" python -m evals.mad.mad_eval_gsa --data-path ./benchmark/data --num-workers X --n-gpu X --n-tasks-gpu X
 ```
+
+### Setting the configs
+
+The default configs, as specified in each eval script and corresponding adapter, are the ones used to produce the above results. They can be modified by defining a different configs dictionary and passing it to the adapter. In general, we used the following config:
+
+```json
+{
+ "dim": 128,
+ "head_dim": 128,
+ "num_heads": 1
+}
+```
+
+With 4 layers: `attn → SwiGLU → attn → SwiGLU`.
